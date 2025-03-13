@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import logo from "../assets/season1.png"
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -74,7 +75,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full sm:w-auto">
         <div className="w-32 sm:w-25 md:w-30 lg:w-40">
-          <img src="src/assets/season1.png" alt="Logo" className="w-full" />
+          <img src={logo} alt="Logo" className="w-full" />
         </div>
         <button
           className="sm:hidden text-white focus:outline-none"
