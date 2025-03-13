@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+.primaryFont {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.secendoryFont {
+  font-family: "Rubik", sans-serif;
+}
+
+
+
+@layer utilities {
+  /* Define the up-down animation */
+  @keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Move up by 20px */
+    }
+  }
+
+  .animate-up-down {
+    animation: upDown 2s ease-in-out infinite; /* 2s duration, infinite loop */
+  }
+}
+
+.web-dev-text1 {
+  font-weight: 800;
+  color: white;
+  text-shadow: 
+    0 0 8px #05660b,
+    0 0 10px #03930a,
+    0 0 2px #065712,
+    0 0 4px #085b0a,
+    0 0 90px #026d14;
+
+    -webkit-text-stroke: 3px rgb(10, 91, 10);
+}
+
+.web-dev-text2 {
+    font-weight: 800;
+    color: black;
+    text-shadow: 
+      0 0 5px #05660b,
+      0 0 8px #03930a,
+      /* 0 0 0px #065712, */
+      0 0 1px #085b0a,
+      0 0 90px #026d14;
+  
+      -webkit-text-stroke: 3px rgb(10, 91, 10);
+  }
+  
