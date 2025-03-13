@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import myImage2 from "../../assets/image2.png"
+
 import "./About.css";
 
 const About = () => {
@@ -161,7 +163,7 @@ const About = () => {
           <div className="absolute inset-0 rounded-full border-2 border-green-400/50 m-2"></div>
           <img
             className="w-full h-full object-cover"
-            src="src/assets/image2.png"
+            src={myImage2}
             alt="Profile"
           />
         </div>

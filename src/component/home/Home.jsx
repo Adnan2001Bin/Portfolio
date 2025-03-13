@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import myImage from "../../assets/image.png"
 import "./Home.css";
 
 const Home = () => {
@@ -37,10 +38,10 @@ const Home = () => {
             Adnan
           </motion.h1>
 
-          {/* Download CV Button */}
+          
           <motion.a
-            href="src/assets/projects/Adnan.pdf" // Path to your CV in the public folder
-            download="Adnan-CV.pdf" // Triggers download with this filename
+            href="src/assets/projects/Adnan.pdf" 
+            download="Adnan-CV.pdf" 
             className="flex justify-center items-center lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] lg:h-15 md:h-14 sm:h-14 h-10 bg-green-600 rounded-4xl font-medium lg:text-lg md:text-sm sm:text-sm text-[10px] md:px-3 sm:px-3 px-3 mt-6 md:mt-8 lg:mt-10"
             whileHover={{ scale: 1.05, backgroundColor: "#15803d" }} // Darker green on hover
             whileTap={{ scale: 0.95 }}
@@ -65,7 +66,7 @@ const Home = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <img src="src/assets/image.png" alt="Adnan's Image" />
+          <img src={myImage} alt="Adnan's Image" />
         </motion.div>
 
         <motion.div

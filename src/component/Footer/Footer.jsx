@@ -48,15 +48,15 @@ const Footer = () => {
           <p className="text-gray-300">House of Street</p>
           <p className="text-gray-300 mt-2">
             <a
-              href="mailto:hasan@yourmail.com"
+              href="adnan2001bin@gmail.com"
               className="hover:text-green-400"
             >
-              hasan@yourmail.com
+              adnan2001bin@gmail.com
             </a>
           </p>
           <p className="text-gray-300">
-            <a href="tel:+1234000" className="hover:text-green-400">
-              +1234 - 000
+            <a href="+880" className="hover:text-green-400">
+            +880 18787 10544
             </a>
           </p>
         </motion.div>
@@ -122,7 +122,7 @@ const Footer = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
       >
         <p>
-          © {new Date().getFullYear()} Your Name. All rights reserved. Built
+          © {new Date().getFullYear()} Adnan Bin Hossen. All rights reserved. Built
           with ❤️ using React.
         </p>
       </motion.div>
