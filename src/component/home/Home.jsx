@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import myImage from "../../assets/image.png"
+import CV from "../../assets/projects/Adnan.pdf"
 import "./Home.css";
 
 const Home = () => {
@@ -40,7 +41,7 @@ const Home = () => {
 
           
           <motion.a
-            href="src/assets/projects/Adnan.pdf" 
+            href={CV}
             download="Adnan-CV.pdf" 
             className="flex justify-center items-center lg:w-[60%] md:w-[80%] sm:w-[90%] w-[100%] lg:h-15 md:h-14 sm:h-14 h-10 bg-green-600 rounded-4xl font-medium lg:text-lg md:text-sm sm:text-sm text-[10px] md:px-3 sm:px-3 px-3 mt-6 md:mt-8 lg:mt-10"
             whileHover={{ scale: 1.05, backgroundColor: "#15803d" }} // Darker green on hover
