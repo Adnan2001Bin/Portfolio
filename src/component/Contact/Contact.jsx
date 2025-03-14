@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <motion.div
       id="contact"
-      className="min-h-screen bg-gray-900 flex items-center justify-center p-8"
+      className="min-h-screen secendoryFont bg-gray-900 flex items-center justify-center p-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.2 }}

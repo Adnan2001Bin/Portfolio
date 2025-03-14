@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import project1 from "../../assets/projects/Screenshot 2025-03-14 010850.png"
 import './Projects.css'
 
 const projects = [
@@ -16,32 +17,56 @@ const projects = [
       "Stripe",
       "Redux",
     ],
-    image: "src/assets/projects/Screenshot 2025-03-14 010850.png",
+    image: project1,
     link: "https://ab-tech-three.vercel.app/", // Example live link
   },
   {
-    title: "Task Management App",
+    title: "AB-TECH Gadget Shop",
     description:
-      "A responsive task manager with real-time updates, user authentication, and drag-and-drop functionality.",
-    tech: ["React", "Node.js", "MongoDB", "WebSockets", "Material-UI"],
-    image: "src/assets/taskmanager.png", // Replace with your project image path
-    link: "https://github.com/yourusername/taskmanager", // Replace with your project link
+      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Stripe",
+      "Redux",
+    ],
+    image: project1,
+    link: "https://ab-tech-three.vercel.app/", // Example live link
   },
   {
-    title: "Portfolio Website",
+    title: "AB-TECH Gadget Shop",
     description:
-      "A dynamic personal portfolio showcasing my skills and projects, built with React and animated with Framer Motion.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    image: "src/assets/portfolio.png", // Replace with your project image path
-    link: "https://github.com/yourusername/portfolio", // Replace with your project link
+      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Stripe",
+      "Redux",
+    ],
+    image: project1,
+    link: "https://ab-tech-three.vercel.app/", // Example live link
   },
   {
-    title: "Social Media Dashboard",
+    title: "AB-TECH Gadget Shop",
     description:
-      "A dashboard for managing social media accounts with analytics, post scheduling, and user management features.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Chart.js"],
-    image: "src/assets/dashboard.png", // Replace with your project image path
-    link: "https://github.com/yourusername/dashboard", // Replace with your project link
+      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Stripe",
+      "Redux",
+    ],
+    image: project1,
+    link: "https://ab-tech-three.vercel.app/", // Example live link
   },
 ];
 
@@ -87,7 +112,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
 

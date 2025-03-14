@@ -71,7 +71,7 @@ const Services = () => {
   return (
     <motion.div
       id="services"
-      className="min-h-screen bg-gray-900 flex items-center justify-center p-8"
+      className="min-h-screen bg-gray-900 flex items-center justify-center p-8 secendoryFont"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.2 }}

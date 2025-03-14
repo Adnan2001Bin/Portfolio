@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-gray-800 text-white py-8 px-4 md:px-8"
+      className="bg-gray-800 secendoryFont text-white py-8 px-4 md:px-8"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
@@ -100,8 +100,8 @@ const Footer = () => {
         {/* Message */}
         <motion.div
           className="text-center md:text-right"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, }}
+          whileInView={{ opacity: 1}}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <h3 className="text-lg font-semibold text-green-400 mb-4">

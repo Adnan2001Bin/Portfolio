@@ -44,14 +44,14 @@ const About = () => {
   return (
     <motion.div
       id="about"
-      className="min-h-screen px-4 w-full md:px-10 lg:px-30 flex flex-col-reverse lg:flex-row lg:justify-between items-center mt-10 md:mt-15 lg:mt-20"
+      className="min-h-screen px-4 w-full md:px-10 lg:px-30 flex flex-col-reverse lg:flex-row lg:justify-between items-center mt-10 md:mt-15 lg:mt-20 "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1 }}
     >
       <motion.div
-        className="text-white w-full lg:w-[40%] mb-6 lg:mb-0 lg:mt-0 mt-10 flex flex-col lg:justify-center lg:items-start justify-center items-center"
+        className="text-white w-full lg:w-[40%] mb-6 lg:mb-0 lg:mt-0 mt-10 flex flex-col lg:justify-center lg:items-start justify-center items-center secendoryFont"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
