@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import project1 from "../../assets/projects/Screenshot 2025-03-14 010850.png"
-import './Projects.css'
+import project1 from "../../assets/projects/Screenshot 2025-03-14 010850.png";
+import "./Projects.css";
+import project2 from "../../assets/projects/assets/Screenshot 2025-03-20 013821.png"
 
 const projects = [
   {
@@ -21,20 +22,21 @@ const projects = [
     link: "https://ab-tech-three.vercel.app/", // Example live link
   },
   {
-    title: "AB-TECH Gadget Shop",
+    title: "CareConnect",
     description:
-      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
+      "A full-stack healthcare platform designed to streamline doctor-patient interactions, offering features like appointment booking, doctor management, patient profiles, and a responsive admin dashboard for overseeing system operations.",
     tech: [
       "React",
       "Node.js",
       "Express.js",
       "MongoDB",
       "Tailwind CSS",
-      "Stripe",
-      "Redux",
+      "Redux Toolkit",
+      "Axios",
+      "Mongoose",
     ],
-    image: project1,
-    link: "https://ab-tech-three.vercel.app/", // Example live link
+    image: project2,
+    link: "https://care-connect-cc-one.vercel.app/", // Example live link
   },
   {
     title: "AB-TECH Gadget Shop",
