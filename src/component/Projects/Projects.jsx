@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import project1 from "../../assets/projects/Screenshot 2025-03-14 010850.png";
+import project2 from "../../assets/projects/Screenshot 2025-03-20 013821.png"
 import "./Projects.css";
-import project2 from "../../assets/projects/assets/Screenshot 2025-03-20 013821.png"
 
 const projects = [
   {
