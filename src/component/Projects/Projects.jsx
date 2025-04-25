@@ -38,38 +38,6 @@ const projects = [
     image: project2,
     link: "https://care-connect-cc-one.vercel.app/", // Example live link
   },
-  {
-    title: "AB-TECH Gadget Shop",
-    description:
-      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
-    tech: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "Stripe",
-      "Redux",
-    ],
-    image: project1,
-    link: "https://ab-tech-three.vercel.app/", // Example live link
-  },
-  {
-    title: "AB-TECH Gadget Shop",
-    description:
-      "A full-stack e-commerce platform specializing in gadgets like earbuds, smartwatches, and headphones, featuring product filtering, a shopping cart, secure Stripe payments, and an admin panel for stock updates.",
-    tech: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "Stripe",
-      "Redux",
-    ],
-    image: project1,
-    link: "https://ab-tech-three.vercel.app/", // Example live link
-  },
 ];
 
 const Projects = () => {
