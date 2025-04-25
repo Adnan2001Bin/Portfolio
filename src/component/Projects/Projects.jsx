@@ -126,7 +126,7 @@ const Projects = () => {
         >
           Explore more of my work on{" "}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Adnan2001Bin"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:underline"
