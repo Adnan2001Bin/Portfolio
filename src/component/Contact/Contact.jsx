@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser"; // Import EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,9 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false); // Track sending state
+  const [successMessage, setSuccessMessage] = useState(""); // Success message
+  const [errorMessage, setErrorMessage] = useState(""); // Error message
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -17,8 +21,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); // Reset form
+    setIsSending(true);
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    // EmailJS send function
+    emailjs
+      .send(
+        "service_4fc24hi", // Replace with your EmailJS Service ID
+        "template_r4qnub5", // Replace with your EmailJS Template ID
+        formData, // Form data to send
+        "wHO7W6GJMWTxLxdaO" // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response.status, response.text);
+          setSuccessMessage("Your message has been sent successfully!");
+          setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); // Reset form
+          setIsSending(false);
+        },
+        (error) => {
+          console.error("Failed to send email:", error);
+          setErrorMessage("Failed to send your message. Please try again later.");
+          setIsSending(false);
+        }
+      );
   };
 
   const contactInfo = [
@@ -99,7 +126,7 @@ const Contact = () => {
 
         {/* Contact Form */}
         <motion.div
-          className="bg-gray-800 p-8 rounded-lg shadow-lg "
+          className="bg-gray-800 p-8 rounded-lg shadow-lg"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -199,13 +226,22 @@ const Contact = () => {
                 required
               />
             </div>
+            {successMessage && (
+              <p className="text-green-400 text-center">{successMessage}</p>
+            )}
+            {errorMessage && (
+              <p className="text-red-400 text-center">{errorMessage}</p>
+            )}
             <motion.button
               type="submit"
-              className="w-full py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              disabled={isSending}
+              className={`w-full py-3 ${
+                isSending ? "bg-gray-600" : "bg-green-600"
+              } text-white rounded-full hover:bg-green-700 transition-colors duration-300`}
+              whileHover={{ scale: isSending ? 1 : 1.05 }}
+              whileTap={{ scale: isSending ? 1 : 0.95 }}
             >
-              Send Message →
+              {isSending ? "Sending..." : "Send Message →"}
             </motion.button>
           </form>
         </motion.div>
